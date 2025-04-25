@@ -35,7 +35,6 @@ public class CatalogSubPage extends BasePage<CatalogSubPage> {
     }
 
     public CatalogSubPage decsreaseFirstItem(int startCount) {
-        System.out.printf("ozonAddToCart_%d%n", startCount);
         SelenideAppiumElement button = $(AppiumBy.accessibilityId(String.format("ozonAddToCart_%d", startCount)));
         button.tap(AppiumClickOptions.tapWithOffset((int) -(button.getSize().getWidth() * 0.4), (int) (button.getSize().getHeight() * 0.1)));
         return this;

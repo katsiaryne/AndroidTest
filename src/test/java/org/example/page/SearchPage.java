@@ -24,7 +24,7 @@ public class SearchPage extends BasePage<SearchPage> {
 
     public SearchPage setSearchText(String text) {
         search.sendKeys(text);
-        recommendationsTitle.shouldNotBe(exist);
+        recommendationsTitle.shouldNot(exist);
         return this;
     }
 }
